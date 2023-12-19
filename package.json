@@ -1,0 +1,23 @@
+{
+  "name": "odyssey-help-articles",
+  "version": "1.0.0",
+  "description": "Markdown articles for the Odyssey App",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Offgrid-Tech/odyssey-help-articles.git"
+  },
+  "author": "Offroad Tech",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Offgrid-Tech/odyssey-help-articles/issues"
+  },
+  "homepage": "https://github.com/Offgrid-Tech/odyssey-help-articles#readme"
+}
