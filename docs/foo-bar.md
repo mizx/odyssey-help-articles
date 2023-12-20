@@ -1,4 +1,5 @@
 ---
+title: "Foo Bar"
 tags:
   - electrical
   - chassis

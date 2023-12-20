@@ -2,11 +2,15 @@ import { loadFront } from "yaml-front-matter";
 import { glob } from "glob";
 import { promises as fs } from "fs";
 import path from "path";
+import { MetadataSchema } from "./metadata.schema";
 
-interface ArticleMetadata {
+interface Metadata {
   tags: string[];
   models: string[];
   title: string;
+}
+
+interface MetadataWithSlug extends Metadata {
   slug: string;
 }
 
@@ -21,7 +25,7 @@ interface Response {
   };
 }
 
-function formatArticles(articles: ArticleMetadata[]) {
+function formatArticles(articles: MetadataWithSlug[]) {
   return articles.reduce(
     (accumulator, current) => {
       accumulator[current.slug] = current;
@@ -47,20 +51,27 @@ function writeJson(response: Response) {
   console.debug("successfully wrote to %s", outputFile);
 }
 
+function validateMetadata(metadata: unknown): Metadata {
+  const result = MetadataSchema.parse(metadata);
+
+  return result;
+}
+
 async function run() {
   const mdFilenames = await glob("./docs/*.md", { absolute: true });
 
   console.debug("found %s total markdown files", mdFilenames.length);
 
-  const articles: ArticleMetadata[] = [];
+  const articles: MetadataWithSlug[] = [];
 
   for (const filename of mdFilenames) {
     const contents = await fs.readFile(filename, "utf-8");
     const parsed = loadFront(contents);
     const { __content, ...metadata } = parsed;
+    const validated = validateMetadata(metadata);
     const slug = getFilenameNoExtension(filename);
 
-    articles.push({ ...metadata, slug } as ArticleMetadata);
+    articles.push({ ...validated, slug });
   }
 
   const output = formatArticles(articles);
