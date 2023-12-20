@@ -5,7 +5,7 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "prepare": "husky install",
-    "aggregate-articles": "ts-node scripts/aggregate-metadata.ts"
+    "aggregate-docs": "ts-node scripts/aggregate-metadata.ts"
   },
   "devDependencies": {
     "@types/yaml-front-matter": "^4.1.3",
