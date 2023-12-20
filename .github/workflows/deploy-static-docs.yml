@@ -40,6 +40,8 @@ jobs:
         run: npm run aggregate-docs
       - name: 📨 Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+            path: docs/
 
   # Deployment job
   deploy:
