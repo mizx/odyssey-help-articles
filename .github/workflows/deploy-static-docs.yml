@@ -31,7 +31,7 @@ jobs:
       - name: 🛠️ Setup Node.js
         uses: actions/setup-node@v4
         with:
-            node-version-file: .nvmrc
+          node-version-file: .nvmrc
       - name: 🛠️ Setup Pages
         uses: actions/configure-pages@v4
       - name: 📦 Install Dependencies
@@ -41,7 +41,7 @@ jobs:
       - name: 📨 Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-            path: docs/
+          path: docs/
 
   # Deployment job
   deploy:
