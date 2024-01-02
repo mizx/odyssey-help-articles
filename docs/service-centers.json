@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Mercedes-Benz Warner Vans",
+    "city": "West Valley City",
+    "state": "UT",
+    "metropolis": "Salt Lake City",
+    "services": ["a-service", "b-service", "official-dealer", "volta"],
+    "location": {
+      "lat": 40.71901413763085,
+      "lng": -112.0204373718084
+    }
+  },
+  {
+    "name": "Momentum Vans",
+    "city": "Arlington",
+    "state": "WA",
+    "metropolis": "Seattle",
+    "services": ["volta", "outfitter"],
+    "location": {
+      "lat": 48.17311806537797,
+      "lng": -122.14742284323152
+    }
+  },
+  {
+    "name": "Hilltop Camper RV",
+    "city": "Fridley",
+    "state": "MN",
+    "metropolis": "Minneapolis",
+    "services": ["official-dealer", "volta"],
+    "location": {
+      "lat": 45.111072218069324,
+      "lng": -93.26041026426827
+    }
+  }
+]
