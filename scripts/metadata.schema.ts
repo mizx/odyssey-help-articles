@@ -19,7 +19,13 @@ const modelSchema = z.enum([
   "2020 MODE",
 ]);
 
-const tagSchema = z.enum(["shower", "plumbing", "electrical", "sink"]);
+const tagSchema = z.enum([
+  "shower",
+  "plumbing",
+  "electrical",
+  "sink",
+  "lights",
+]);
 
 export const MetadataSchema = z
   .object({
