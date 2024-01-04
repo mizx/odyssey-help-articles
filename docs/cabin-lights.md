@@ -27,7 +27,7 @@ reference: fuse panel location
 
 reference: fuse panel itself
 
-## 2021 and newer
+## 2022 and newer
 
 Try turning off lights via ModeCOM screen. If not successful try resetting the Volta.
 
