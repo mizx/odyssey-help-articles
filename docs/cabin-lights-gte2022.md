@@ -3,14 +3,14 @@ title: Cabin lights not working (ex 2)
 tags:
   - lights
 models:
-  - 2022 Beast
-  - 2022 Stealth
-  - 2022 Classic
-  - 2022 LT
-  - 2023 Classic
-  - 2023 Stealth
-  - 2023 Beast
-  - 2023 LT
+  - 2022-beast
+  - 2022-stealth
+  - 2022-classic
+  - 2022-lt
+  - 2023-classic
+  - 2023-stealth
+  - 2023-beast
+  - 2023-lt
 ---
 
 # Cabin lights not working
