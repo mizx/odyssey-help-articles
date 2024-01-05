@@ -1,0 +1,91 @@
+---
+title: Volta System, Indicators & Inverter
+tags:
+  - electrical
+  - volta
+models:
+  - 2022-beast
+  - 2022-stealth
+  - 2022-classic
+  - 2023-beast
+  - 2023-stealth
+  - 2023-classic
+---
+
+# Volta
+
+## Push button colors
+
+| Color                        | Description                   |
+| ---------------------------- | ----------------------------- |
+| Green                        | System on                     |
+| Green (flashing)             | Charge only mode \*           |
+| Yellow                       | Too cold to charge            |
+| Yellow (flashing, 5 sec)     | Starting                      |
+| Dim yellow (flashing, 5 sec) | Shutting down                 |
+| Yellow (flashing, 30 sec)    | System fault causing shutdown |
+
+\* Charge only mode: System is off but charging, will shutdown once power is removed.
+
+## Important pack temperatures
+
+| Temp (F) | Description                                |
+| -------- | ------------------------------------------ |
+| 134.6    | System shutdown (high temperature)         |
+| 131      | High temperature warning                   |
+| 125.6    | High temperature recovery \*               |
+| 116.6    | Too hot to charge, pack power still usable |
+| 59       | heating pads turn off (if they were on)    |
+| 42.8     | Charging resumes (if system was too cold)  |
+| 37.8     | System too cold to charge                  |
+| -4       | System shutdown (too cold)                 |
+
+\* If shutdown due to heat, pack will power up when below this temperature.
+
+## Volta LCD System Indicators
+
+| Indicator                                         | Description                                                                                                     |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| ![](images/volta-system-indicator-alternator.png) | Alternator Charging: Flex Pack is ready for charging from alternator, or is currently charging from alternator. |
+| ![](images/volta-system-indicator-cold.png)       | Flex Pack Temperature Low: Flex Pack too cold to charge.                                                        |
+| ![](images/volta-system-indicator-heating.png)    | Heating Pads On: Heating pads are on and actively warming Flex Pack.                                            |
+| ![](images/volta-system-indicator-hot.png)        | Pack Temperature High: Flex Pack is at or near high temperature shutdown limit.                                 |
+| ![](images/volta-system-indicator-fault.png)      | System Fault: System fault is active. Refer to the Alerts screen for details.                                   |
+
+## Inverter Status LED
+
+### 3200W LP Series
+
+#### Normal States
+
+| LED Color | LED State   | Operationg Conditions               |
+| --------- | ----------- | ----------------------------------- |
+| Green     | Constant ON | Charger Soft Start                  |
+| Green     | 1 blink     | Bulk Charge (Constant Current CC)   |
+| Green     | 2 blinks    | Accept Charge (Constant Voltage CV) |
+| Green     | 4 blinks    | Load Management Active              |
+| Green     | 6 blinks    | Charger Monitor Mode                |
+| Amber     | 1 blink     | Inverting                           |
+
+### Fault States
+
+| LED Color       | LED State | Operationg Conditions                    |
+| --------------- | --------- | ---------------------------------------- |
+| None            | Off       | No power to unit or internal fault       |
+| Amber           | Solid     | Low battery 0-5 seconds (Warning)        |
+| Red             | Solid     | Overload 0-5 seconds (Warning)           |
+| Red             | 1 blink   | Inverter Low Battery shut down\*\*       |
+| Red             | 2 blinks  | Inverter Overload shut down              |
+| Red             | 3 blinks  | High Temp Heatsink\*                     |
+| Red             | 4 blinks  | Feedback Fault, Output Short Circuit\*\* |
+| Red             | 5 blinks  | High Battery\*                           |
+| Red             | 7 blinks  | High Temp Transformer                    |
+| Red             | 8 blinks  | Inverter Off by CAN                      |
+| Red             | 9 blinks  | Input DC Transient Clamp                 |
+| Green-Amber-Red | --        | Reverse Polarity Detected\*\*\*          |
+
+\* Faults marked will self recover when conditions return to normal range.
+
+\*\* Faults may be due to a short-circuited output or low or weak DC voltage source
+
+\*\*\* The inverter/charger must be sent back to the factory for evaluation
