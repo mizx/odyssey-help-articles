@@ -10,8 +10,6 @@ models:
   - 2020-mode
 ---
 
-# Cabin lights not working
-
 If pressing the touch switch does not turn off overhead lights, remove the fuse labeled "Cabin Lights" located in the 12VDC fuse panel. Refer to the fuse diagram on the access panel (see figures below).
 
 ![Reference for fuse panel location](images/fuse-panel-location.jpg)
