@@ -1,5 +1,5 @@
 ---
-title: Cabin lights not working (ex 1)
+title: Cabin lights not working (all)
 tags:
   - lights
 models:
