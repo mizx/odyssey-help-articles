@@ -14,27 +14,29 @@ models:
 
 ## State of Charge (SOC) gauge colors
 
-| Color | Description |
-| Solid green | Normal operating SOC (20%+) |
-| Solid yellow | Low SOC (10-20%) |
-| Solid red | Low SOC (<10%) |
-| 6x red flashing | System empty |
-| Flashing red | High pack temp |
-| Slow flashing blue (5 sec) | Too cold to charge |
-| Slow flashing blue (constant) | Loading system data |
-| Slow flashing yellow (5 sec) | Too hot to charge |
+| Color                         | Description                 |
+| ----------------------------- | --------------------------- |
+| Solid green                   | Normal operating SOC (20%+) |
+| Solid yellow                  | Low SOC (10-20%)            |
+| Solid red                     | Low SOC (<10%)              |
+| 6x red flashing               | System empty                |
+| Flashing red                  | High pack temp              |
+| Slow flashing blue (5 sec)    | Too cold to charge          |
+| Slow flashing blue (constant) | Loading system data         |
+| Slow flashing yellow (5 sec)  | Too hot to charge           |
 
 ## Important pack temperatures
 
-| Temp (F) | Description |
-| 134.6 | System shutdown (high temperature) |
-| 131 | High temperature warning |
-| 125.6 | High temperature recovery \* |
-| 116.6 | Too hot to charge, pack power still usable |
-| 59 | heating pads turn off (if they were on) |
-| 42.8 | Charging resumes (if system was too cold) |
-| 37.8 | System too cold to charge |
-| -4 | System shutdown (too cold) |
+| Temp (F) | Description                                |
+| -------- | ------------------------------------------ |
+| 134.6    | System shutdown (high temperature)         |
+| 131      | High temperature warning                   |
+| 125.6    | High temperature recovery \*               |
+| 116.6    | Too hot to charge, pack power still usable |
+| 59       | heating pads turn off (if they were on)    |
+| 42.8     | Charging resumes (if system was too cold)  |
+| 37.8     | System too cold to charge                  |
+| -4       | System shutdown (too cold)                 |
 
 \* If shutdown due to heat, pack will power up when below this temperature.
 
