@@ -20,13 +20,13 @@ models:
 | Color                        | Description                   |
 | ---------------------------- | ----------------------------- |
 | Green                        | System on                     |
-| Green (flashing)             | Charge only mode \*           |
+| Green (flashing)             | Charge only mode [^1]         |
 | Yellow                       | Too cold to charge            |
 | Yellow (flashing, 5 sec)     | Starting                      |
 | Dim yellow (flashing, 5 sec) | Shutting down                 |
 | Yellow (flashing, 30 sec)    | System fault causing shutdown |
 
-\* Charge only mode: System is off but charging, will shutdown once power is removed.
+[^1]: Charge only mode: System is off but charging, will shutdown once power is removed.
 
 ## Important pack temperatures
 
@@ -34,14 +34,14 @@ models:
 | -------- | ------------------------------------------ |
 | 134.6    | System shutdown (high temperature)         |
 | 131      | High temperature warning                   |
-| 125.6    | High temperature recovery \*               |
+| 125.6    | High temperature recovery [^1]             |
 | 116.6    | Too hot to charge, pack power still usable |
 | 59       | heating pads turn off (if they were on)    |
 | 42.8     | Charging resumes (if system was too cold)  |
 | 37.8     | System too cold to charge                  |
 | -4       | System shutdown (too cold)                 |
 
-\* If shutdown due to heat, pack will power up when below this temperature.
+[^1]: If shutdown due to heat, pack will power up when below this temperature.
 
 ## Volta LCD System Indicators
 
@@ -70,23 +70,21 @@ models:
 
 ### Fault States
 
-| LED Color       | LED State | Operationg Conditions                    |
-| --------------- | --------- | ---------------------------------------- |
-| None            | Off       | No power to unit or internal fault       |
-| Amber           | Solid     | Low battery 0-5 seconds (Warning)        |
-| Red             | Solid     | Overload 0-5 seconds (Warning)           |
-| Red             | 1 blink   | Inverter Low Battery shut down\*\*       |
-| Red             | 2 blinks  | Inverter Overload shut down              |
-| Red             | 3 blinks  | High Temp Heatsink\*                     |
-| Red             | 4 blinks  | Feedback Fault, Output Short Circuit\*\* |
-| Red             | 5 blinks  | High Battery\*                           |
-| Red             | 7 blinks  | High Temp Transformer                    |
-| Red             | 8 blinks  | Inverter Off by CAN                      |
-| Red             | 9 blinks  | Input DC Transient Clamp                 |
-| Green-Amber-Red | --        | Reverse Polarity Detected\*\*\*          |
+| LED Color       | LED State | Operationg Conditions                     |
+| --------------- | --------- | ----------------------------------------- |
+| None            | Off       | No power to unit or internal fault        |
+| Amber           | Solid     | Low battery 0-5 seconds (Warning)         |
+| Red             | Solid     | Overload 0-5 seconds (Warning)            |
+| Red             | 1 blink   | Inverter Low Battery shut down [^2]       |
+| Red             | 2 blinks  | Inverter Overload shut down               |
+| Red             | 3 blinks  | High Temp Heatsink [^1]                   |
+| Red             | 4 blinks  | Feedback Fault, Output Short Circuit [^2] |
+| Red             | 5 blinks  | High Battery [^1]                         |
+| Red             | 7 blinks  | High Temp Transformer                     |
+| Red             | 8 blinks  | Inverter Off by CAN                       |
+| Red             | 9 blinks  | Input DC Transient Clamp                  |
+| Green-Amber-Red | --        | Reverse Polarity Detected [^3]            |
 
-\* Faults marked will self recover when conditions return to normal range.
-
-\*\* Faults may be due to a short-circuited output or low or weak DC voltage source
-
-\*\*\* The inverter/charger must be sent back to the factory for evaluation
+[^1]: Faults will self recover when conditions return to normal range.
+[^2]: Faults may be due to a short-circuited output or low or weak DC voltage source.
+[^3]: The inverter/charger must be sent back to the factory for evaluation.
