@@ -1,5 +1,6 @@
 ---
 title: Volta System, Indicators & Inverter
+subtitle: 2021 and older
 tags:
   - electrical
   - volta
@@ -18,7 +19,7 @@ models:
 | ----------------------------- | --------------------------- |
 | Solid green                   | Normal operating SOC (20%+) |
 | Solid yellow                  | Low SOC (10-20%)            |
-| Solid red                     | Low SOC (<10%)              |
+| Solid red                     | Low SOC (&lt;10%)           |
 | 6x red flashing               | System empty                |
 | Flashing red                  | High pack temp              |
 | Slow flashing blue (5 sec)    | Too cold to charge          |
