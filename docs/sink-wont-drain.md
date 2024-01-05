@@ -12,8 +12,6 @@ models:
   - 2023-beast
 ---
 
-# Sink won't drain
-
 First check the following:
 
 - Is the grey tank full?

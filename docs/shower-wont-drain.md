@@ -12,8 +12,6 @@ models:
   - 2023-beast
 ---
 
-# Shower won't drain
-
 Two things usually prevent the shower from draining. First is a full grey tank and second is an inverted bladder on the shower drain pipe.
 
 ## Troubleshooting

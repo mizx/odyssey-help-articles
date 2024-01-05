@@ -13,8 +13,6 @@ models:
   - 2023-lt
 ---
 
-# Cabin lights not working
-
 ## 2021 and older
 
 If pressing the touch switch does not turn off overhead lights, remove the fuse labeled "Cabin Lights" located in the 12VDC fuse panel. Refer to the fuse diagram on the access panel (see figures below).
