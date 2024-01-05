@@ -1,5 +1,6 @@
 ---
-title: Cabin lights not working (ex 2)
+title: Cabin lights not working
+subtitle: 2022 and newer
 tags:
   - lights
 models:

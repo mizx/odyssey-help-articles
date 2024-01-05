@@ -32,5 +32,6 @@ export const MetadataSchema = z
     models: modelSchema.array(),
     tags: tagSchema.array(),
     title: z.string(),
+    subtitle: z.string().optional(),
   })
   .strict();
