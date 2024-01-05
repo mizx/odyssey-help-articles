@@ -68,7 +68,7 @@ models:
 | Green     | 6 blinks    | Charger Monitor Mode                |
 | Amber     | 1 blink     | Inverting                           |
 
-## Fault States
+### Fault States
 
 | LED Color       | LED State | Operationg Conditions                           |
 | --------------- | --------- | ----------------------------------------------- |
