@@ -21,5 +21,5 @@ A note[^1]
 
 ## Tasklist
 
-- [x] to do
+- [ ] to do
 - [x] done
