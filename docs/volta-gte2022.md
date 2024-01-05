@@ -1,5 +1,5 @@
 ---
-title: Volta System, Indicators & Inverter
+title: Volta System
 subtitle: 2022 - 2023
 tags:
   - electrical

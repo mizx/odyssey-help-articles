@@ -1,5 +1,5 @@
 ---
-title: Volta System, Indicators & Inverter
+title: Volta System
 subtitle: 2021 and older
 tags:
   - electrical
