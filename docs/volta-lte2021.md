@@ -31,14 +31,14 @@ models:
 | -------- | ------------------------------------------ |
 | 134.6    | System shutdown (high temperature)         |
 | 131      | High temperature warning                   |
-| 125.6    | High temperature recovery \*               |
+| 125.6    | High temperature recovery [^1]             |
 | 116.6    | Too hot to charge, pack power still usable |
 | 59       | heating pads turn off (if they were on)    |
 | 42.8     | Charging resumes (if system was too cold)  |
 | 37.8     | System too cold to charge                  |
 | -4       | System shutdown (too cold)                 |
 
-\* If shutdown due to heat, pack will power up when below this temperature.
+[^1]: If shutdown due to heat, pack will power up when below this temperature.
 
 ## Inverter Status LED
 
@@ -56,18 +56,18 @@ models:
 
 ### Status LED Fault States
 
-| LED Color | LED State   | Operationg Conditions              |
-| --------- | ----------- | ---------------------------------- |
-| Any       | Off         | No power to unit or internal fault |
-| Red       | Constant ON | Internal fault                     |
-| Red       | 1 blink     | Inverter low battery shut down\*   |
-| Red       | 2 blinks    | Inverter Overload shut down        |
-| Red       | 3 blinks    | Transformer High Temp\*            |
-| Red       | 4 blinks    | MOSFET High Temp\*                 |
-| Red       | 5 blinks    | Battery probe open or shorted      |
-| Red       | 6 blinks    | Charger high battery temp\*        |
-| Amber     | 2 blinks    | Charger warm battery\*             |
-| Amber     | 3 blinks    | High battery voltage\*             |
-| Amber     | 4 blinks    | System overload, reset required    |
+| LED Color | LED State   | Operationg Conditions               |
+| --------- | ----------- | ----------------------------------- |
+| Any       | Off         | No power to unit or internal fault  |
+| Red       | Constant ON | Internal fault                      |
+| Red       | 1 blink     | Inverter low battery shut down [^1] |
+| Red       | 2 blinks    | Inverter Overload shut down         |
+| Red       | 3 blinks    | Transformer High Temp [^1]          |
+| Red       | 4 blinks    | MOSFET High Temp [^1]               |
+| Red       | 5 blinks    | Battery probe open or shorted       |
+| Red       | 6 blinks    | Charger high battery temp [^1]      |
+| Amber     | 2 blinks    | Charger warm battery [^1]           |
+| Amber     | 3 blinks    | High battery voltage [^1]           |
+| Amber     | 4 blinks    | System overload, reset required     |
 
-Faults marked with \* will self recover when conditions return to normal range.
+[^1]: Faults will self recover when conditions return to normal range.
