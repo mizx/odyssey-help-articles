@@ -5,16 +5,10 @@ tags:
   - common
   - electrical
 models:
-  - 2023-beast
-  - 2023-stealth
-  - 2023-classic
-  - 2022-beast
-  - 2022-stealth
-  - 2022-classic
-  - 2021-beast
-  - 2021-stealth
-  - 2021-classic
-  - 2020-mode
+  - 2024-beast
+  - 2024-stealth
+  - 2024-mystic
+  - 2024-classic
 ---
 
 ## Troubleshooting
