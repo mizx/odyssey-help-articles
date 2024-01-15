@@ -26,6 +26,7 @@ const tagSchema = z.enum([
   "sink",
   "lights",
   "volta",
+  "common",
 ]);
 
 export const MetadataSchema = z
