@@ -4,7 +4,6 @@ tags:
   - plumbing
   - shower
   - common
-  - foo
 models:
   - 2024-beast
   - 2024-stealth
