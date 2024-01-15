@@ -24,3 +24,6 @@ jobs:
 
       - name: 💅 Prettier
         run: npm run prettier
+
+      - name: 🔎 Validate Markdown Schemas
+        run: npm run aggregate-docs
