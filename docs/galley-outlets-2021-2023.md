@@ -1,5 +1,5 @@
 ---
-title: Galley outlets have no power
+title: 120V outlets have no power
 subtitle: 2023 and older
 tags:
   - common
@@ -17,7 +17,7 @@ models:
   - 2020-mode
 ---
 
-## Troubleshooting
+## Galley outlet troubleshooting
 
 1. is the inverter on and volta status green?
 2. Check the 120VAC breaker located on the passanger side garage, located in the black access panel, labeled "Galley" (figure 1).
@@ -37,3 +37,21 @@ Figure 2: Location of the access port for inverter.
 
 ![Mode Power breaker reference](images/120vac-breaker-panel-with-powerstation.jpg)
 Figure 3: Additional breakers for Stealth/Beast
+
+## Other outlet troubleshooting
+
+1. is the inverter on and volta status green?
+2. Located behind the main breaker round access cover (figure 1), check the GFCI outlet on the inverter to ensure it is not tripped (figure 2). If it is, press reset button.
+   - NOTE: 2020 and earlier MODEs do not have a "Galley" circuit breaker in the breaker panel. All of the 120V outlets are fed from teh GFCI outlet on the inverter.
+3. Check the 30A push button breaker inside the passanger side cabinet, labeled "Main Output Breaker." This is located behind the main breaker round access cover on the inverter (figure 1).
+4. Check outside outlet GFCI.
+5. Verify the GFCI outlet is not tripped by the fold down table.
+6. Reset Volta.
+   - For 2022 and newer, leave volta off for at least 1 minute for PDM reset.
+7. If problem persist, contact Storyteller/Volta.
+
+![location of inverter access](images/inverter-access-location.jpg)
+Figure 1: Location of the access port for inverter.
+
+![Volta inverter GFCI](images/volta-inverter-output-box.jpg)
+Figure 2: Outlet on inverter (has GFCI)
