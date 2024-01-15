@@ -1,6 +1,6 @@
 ---
 title: Galley outlets have no power
-subittle: 2024+
+subittle: 2024 and newer
 tags:
   - common
   - electrical
