@@ -2,7 +2,6 @@
 title: Lithionics System
 tags:
   - electrical
-  - lithionics
 models:
   - 2024-beast
   - 2024-stealth
