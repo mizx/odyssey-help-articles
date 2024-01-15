@@ -4,6 +4,10 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   run-linters:
     name: Checks
@@ -24,3 +28,6 @@ jobs:
 
       - name: 💅 Prettier
         run: npm run prettier
+
+      - name: 🔎 Validate Markdown Schemas
+        run: npm run aggregate-docs
