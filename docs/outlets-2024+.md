@@ -1,5 +1,5 @@
 ---
-title: Galley outlets have no power
+title: 120V (AC) outlets have no power
 subtitle: 2024 and newer
 tags:
   - common

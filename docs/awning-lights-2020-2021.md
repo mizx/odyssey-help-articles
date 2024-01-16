@@ -2,6 +2,7 @@
 title: Awning lights not working
 subtitle: 2021 and older
 tags:
+  - common
   - lights
 models:
   - 2021-beast
