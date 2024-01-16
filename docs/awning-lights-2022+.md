@@ -1,13 +1,21 @@
 ---
 title: Awning lights not working
-subtitle: 2021 and older
+subtitle: 2022 and newer
 tags:
   - lights
 models:
-  - 2021-beast
-  - 2021-stealth
-  - 2021-classic
-  - 2020-mode
+  - 2024-beast
+  - 2024-stealth
+  - 2024-mystic
+  - 2024-classic
+  - 2023-beast
+  - 2023-stealth
+  - 2023-classic
+  - 2023-lt
+  - 2022-beast
+  - 2022-stealth
+  - 2022-classic
+  - 2022-lt
 ---
 
 1. Try turning off lights via ModeCOM screen.

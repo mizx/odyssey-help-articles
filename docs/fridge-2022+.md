@@ -1,6 +1,6 @@
 ---
 title: Awning lights not working
-subtitle: 2021 and older
+subtitle: 2022 and newer
 tags:
   - lights
 models:
