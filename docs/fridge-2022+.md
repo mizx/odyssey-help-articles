@@ -2,6 +2,7 @@
 title: Fridge not working
 subtitle: 2022 and newer
 tags:
+  - appliances
   - lights
 models:
   - 2024-beast
